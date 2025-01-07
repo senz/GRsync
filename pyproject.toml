@@ -1,0 +1,22 @@
+[project]
+name = "grsync"
+version = "0.1.0"
+description = "Sync photos from Ricoh GR II / GR III / GR IIIx via Wifi"
+authors = [
+    {name = "Kosta",email = "kosta-codes@proton.me"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+]
+
+[project.scripts]
+grsync = "GRsync:main"
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
